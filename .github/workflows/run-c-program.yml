@@ -1,0 +1,19 @@
+name: Run C Program
+
+on: [push, pull_request]  # Runs whenever you push code or create a pull request
+
+jobs:
+  run:
+    runs-on: ubuntu-latest  # Uses Ubuntu (Linux) as the environment
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Gets the latest code from GitHub
+
+      - name: Install GCC Compiler
+        run: sudo apt-get install -y gcc  # Installs the C compiler
+
+      - name: Compile C Code
+        run: gcc program.c -o program  # Compiles 'program.c' into an executable
+
+      - name: Run Program
+        run: ./program  # Runs the compiled executable
