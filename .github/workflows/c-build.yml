@@ -1,4 +1,4 @@
-name: C Build and Test
+name: C Program Build and Run
 
 on:
   push:
@@ -13,14 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y gcc make
+    - name: Install GCC (if needed)
+      run: sudo apt-get install gcc
 
-      - name: Compile C program
-        run: gcc -Wall -Werror -o output main.c
+    - name: Compile all C programs
+      run: |
+        for file in *.c; do
+          gcc -Wall -Werror -o "${file%.c}" "$file"  # Compiles each .c file
+        done
 
-      - name: Run the program
-        run: ./output
+    - name: Run all compiled programs
+      run: |
+        for file in *.c; do
+          ./"${file%.c}"  # Runs each compiled file
+        done
