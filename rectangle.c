@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int l,b,a;
 	printf("Enter the length and breadth of rectangle");
