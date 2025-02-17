@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int l,a;
 	printf("Enter thelength of cube ");
