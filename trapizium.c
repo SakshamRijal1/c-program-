@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int b,c,h,a;
 	printf("Enter the parallel bases and height of triangle");
