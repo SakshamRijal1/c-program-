@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int b,h,a;
 	printf("Enter the base and height of triangle");
