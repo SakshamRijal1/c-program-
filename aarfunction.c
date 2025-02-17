@@ -4,7 +4,7 @@ void read(int a[]);
 void sort(int a[]);
 int main()
 
-{ int a[10],i,j;
+{ int a[10];
 	
 	printf("\n enter ten numbers");
 	read(a);
