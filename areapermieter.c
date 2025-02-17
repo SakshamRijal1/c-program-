@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define pie 3.1415
-main()
+int main()
 {
 	float r,a,p;
 	printf("Enter the radius of circle");
