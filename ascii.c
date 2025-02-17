@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int i;
 	for(i=0;i<=255;i++)
