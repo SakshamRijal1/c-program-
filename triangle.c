@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-main()
+int main()
 {
 	int b,c,h,s,a;
 	printf("Enter the sides of triangle");
