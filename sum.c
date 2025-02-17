@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 { int a,b,sum,avg;
 printf("Enter the value of a and b");
 scanf("%d %d ",&a,&b);
