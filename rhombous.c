@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int d1,d2,a;
 	printf("Enter the diagonals of rhombus");
